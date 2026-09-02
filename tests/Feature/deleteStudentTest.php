@@ -13,7 +13,7 @@ test('soft delete a student',function(){
     $response=$this->postJson('/api/student/3/delete',[
             'status'=>'inactive'
     ]);
-    $response->assertStatus(200);
+    $response->assertStatus(201);
 
 });
 
